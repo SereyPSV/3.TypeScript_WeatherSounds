@@ -1,0 +1,20 @@
+{
+  "name": "echoes_of_nature",
+  "version": "1.0.0",
+  "description": "Echoes of nature",
+  "private": true,
+  "scripts": {
+    "start": "npx webpack --mode development",
+    "build": "npx webpack --mode production"
+  },
+  "keywords": [
+    "webpack",
+    "js"
+  ],
+  "author": "validpsv@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.90.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
