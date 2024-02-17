@@ -11,23 +11,103 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  max-width: 960px;
-  margin: 1rem auto;
-}
+  max-width: 1200px;
+  height: 100vh;
+  margin: auto;
 
-h1 {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: darkblue;
-}
+  main {
+    position: relative;
+    width: 100%;
+    height: 100%;
 
-ul {
-  list-style: none;
+    .background_blur {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('./assets/summer-bg.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      filter: blur(5px);
+      z-index: 1;
+    }
 
-  li {
-    padding: 1rem 2rem;
-    border: 1px solid skyblue;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+    .content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 2;
+
+      h1 {
+        text-align: center;
+        margin: 5rem;
+        font-size: 4rem;
+        color: #c96f2a;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 10rem;
+          height: 10rem;
+          border: 1px solid azure;
+          border-radius: 10px;
+          background-size: cover;
+          transition: all 0.2s;
+
+          &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+            transform: scale(1.05);
+          }
+        }
+
+        .summer {
+          background-image: url('./assets/summer-bg.jpg');
+          .sun {
+            width: 4rem;
+            height: 4rem;
+            background-image: url('./assets/icons/sun.svg');
+            background-size: cover;
+          }
+        }
+
+        .rainy {
+          background-image: url('./assets/rainy-bg.jpg');
+          .rain {
+            width: 4rem;
+            height: 4rem;
+            background-image: url('./assets/icons/cloud-rain.svg');
+            background-size: cover;
+          }
+        }
+
+        .winter {
+          background-image: url('./assets/winter-bg.jpg');
+          .snow {
+            width: 4rem;
+            height: 4rem;
+            background-image: url('./assets/icons/cloud-snow.svg');
+            background-size: cover;
+          }
+        }
+      }
+      .volume_control {
+        margin-top: 2rem;
+        width: 12rem;
+      }
+    }
   }
 }

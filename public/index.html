@@ -1,15 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shoutcut icon" href="favicon.png" />
-    <title>Webpack App</title>
+    <title>Weather sounds</title>
   </head>
   <body>
-    <h1>Webpack App</h1>
-
-    <ul id="app"></ul>
+    <main class="background">
+      <div class="background_blur"></div>
+      <div class="content">
+        <h1>Weather sounds</h1>
+        <div class="buttons">
+          <button class="summer"><div class="sun"></div></button>
+          <button class="rainy"><div class="rain"></div></button>
+          <button class="winter"><div class="snow"></div></button>
+        </div>
+        <input type="range" class="volume_control" min="0" max="1" step="0.02" />
+      </div>
+    </main>
   </body>
 </html>
